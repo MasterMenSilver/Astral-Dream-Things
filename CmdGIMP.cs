@@ -32,10 +32,11 @@ namespace MCGalaxy {
 		}
 		
 		public override void Help(Player p) {
-			p.Message("&e/GIMP");
-			p.Message("&eMakes you a GIMP n times!");
+			p.Message("%T/GIMP");
+			p.Message("%HMakes you a GIMP n times!");
 		}
 	}
+	
 }
 
 
