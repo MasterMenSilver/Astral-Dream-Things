@@ -1,13 +1,15 @@
 using System;
 
+// -------------------------- //
+// Made by MasterMen for Astral Dream
+// -------------------------- //
 // Written in: 2020.11.12
-// Last Update: 2020.11.26
+// Last Update: 2020.12.24
+// -------------------------- //
 
 namespace MCGalaxy {
 	public class CmdMsgme : Command {
 		public override string name { get { return "MsgMe"; } }
-		//public override string MCGalaxy_Version { get { return "1.9.2.7"; } }
-		//public override string creator { get { return "MasterMen"; } }
 		public override string shortcut { get { return ""; } }
 		public override string type { get { return "other"; } }
 		public override bool museumUsable { get { return true; } }
