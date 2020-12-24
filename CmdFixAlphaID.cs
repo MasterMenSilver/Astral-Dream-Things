@@ -3,15 +3,17 @@ using MCGalaxy;
 using MCGalaxy.Commands;
 using MCGalaxy.DB;
 
+// -------------------------- //
+// Made by MasterMen for Astral Dream
+// -------------------------- //
 // Written in: 2020.12.20
-// Last Update: 2020.12.20
+// Last Update: 2020.12.24
+// -------------------------- //
 
 namespace MCGalaxy {
 
 	public class CmdFixAlphaID : Command2 {
 		public override string name { get { return "FixAlphaID"; } }
-		//public override string MCGalaxy_Version { get { return "1.9.2.8"; } }
-		//public override string creator { get { return "MasterMen"; } }
 		public override string shortcut { get { return "fixaid"; } }
 		public override string type { get { return "other"; } }
 		public override bool museumUsable { get { return false; } }
