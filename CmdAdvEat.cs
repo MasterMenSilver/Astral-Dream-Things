@@ -4,15 +4,17 @@ using MCGalaxy;
 using MCGalaxy.Commands;
 using MCGalaxy.DB;
 
+// -------------------------- //
+// Made by MasterMen for Astral Dream
+// -------------------------- //
 // Written in: 2020.11.15
-// Last Update: 2020.11.26
+// Last Update: 2020.12.24
+// -------------------------- //
 
 namespace MCGalaxy {
 
 	public class CmdAdvEat : Command2 {
 		public override string name { get { return "AdvEat"; } }
-		//public override string MCGalaxy_Version { get { return "1.9.2.7"; } }
-		//public override string creator { get { return "MasterMen"; } }
 		//public override string shortcut { get { return "aeat"; } }
 		public override string type { get { return "other"; } }
 		public override bool museumUsable { get { return true; } }
@@ -65,28 +67,20 @@ namespace MCGalaxy {
 			else if (message == "Paper" || message == "paper") {
 				message = "%7crumpled and chewed a piece of %fpaper%7.";
 				send = true;
-			}
-			else {
-				send = false;
-			}
+			} else { send = false; }
 			
-			if (send == true) {
+			if (send == true)
 				Chat.MessageGlobal("{0}%7 {1}", p.ColoredName, message);
-			}
 		}
 		// This one controls what happens when you use /Help [commandname].
 		public override void Help(Player p) {
 			p.Message("&e/AdvEat <food>");
 			p.Message("&eMakes you eat something exact.");
 		}
-
 	}
-
 
 	public class CmdDrink : Command2 {
 		public override string name { get { return "Drink"; } }
-		//public override string MCGalaxy_Version { get { return "1.9.2.7"; } }
-		//public override string creator { get { return "MasterMen"; } }
 		//public override string shortcut { get { return "drn"; } }
 		public override string type { get { return "other"; } }
 		public override bool museumUsable { get { return true; } }
@@ -113,20 +107,16 @@ namespace MCGalaxy {
 				send = true;
 			}
 			else if (message == "Pennyroyal Tea" || message == "pennyroyal tea") {
-				message = "%fsit and drink &upennyroyal tea...";
+				message = "%fsit and drink &uPennyroyal Tea...";
 				send = true;
 			}
 			else if (message == "Coffee" || message == "coffee") {
-				message = "%7just drank a &scoffee&f. &e:lightning: Energized!!!%7.";
+				message = "%7just drank a &sCoffee&f. &e:lightning: Energizing!!!%7.";
 				send = true;
-			}
-			else {
-				send = false;
-			}
+			} else { send = false; }
 			
-			if (send == true) {
+			if (send == true)
 				Chat.MessageGlobal("{0}%7 {1}", p.ColoredName, message);
-			}
 		}
 		// This one controls what happens when you use /Help [commandname].
 		public override void Help(Player p) {
