@@ -7,7 +7,7 @@ using MCGalaxy.DB;
 // Made by MasterMen for Astral Dream.
 // -------------------------- //
 // Written in: 2020.11.14
-// Last Update: 2020.12.24
+// Last Update: 2021.01.09
 // -------------------------- //
 
 namespace MCGalaxy {
@@ -27,11 +27,11 @@ namespace MCGalaxy {
 			//p.ColoredName
 			
 			Player shad = PlayerInfo.FindMatches(p, "shadows");
-			if(p == shad) {
+			if(shad == null)
+				Chat.MessageGlobal("{0}%7, You are now a %i{1} %7follower! Welcome to the %eGIMP %7gang!", p.ColoredName, "shadows");
+			else
 				Chat.MessageGlobal("{0} is a GIMP king! Everybody do /GIMP command and become their slave!", p.ColoredName);
-			} else {
-				Chat.MessageGlobal("{0}%7, You are now a %i{1} %7follower! Welcome to the %eGIMP %7gang!", p.ColoredName, shad.ColoredName);
-			}
+			
 		}
 		
 		public override void Help(Player p) {
